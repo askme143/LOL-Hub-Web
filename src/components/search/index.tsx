@@ -1,7 +1,7 @@
 import React from 'react';
 import { Input } from 'antd';
-import { SearchContainer } from './styles';
 import 'antd/dist/antd.css';
+import { SearchContainer } from './styles';
 
 interface SearchProps {
   makeURL: (_name: string) => string;
