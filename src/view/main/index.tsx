@@ -10,7 +10,7 @@ function Main() {
   return (
     <Background>
       <Container>
-        <Logo fontSize="150px" fontColor="#333333" margin="150px 0 0 0" />
+        <Logo fontSize="15rem" fontColor="#333333" margin="150px 0 0 0" />
         <Search makeURL={makeURL} width="650px" height="50px" />
       </Container>
     </Background>
