@@ -1,19 +1,19 @@
 import React from 'react';
-import { LogoStyle, LogoContainer } from './styles';
+import { LogoStyle, LogoBox } from './styles';
 
 interface LogoProps {
-  fontSize: string | null;
-  fontColor: string | null;
-  margin: string | null;
+  fontSize?: string;
+  fontColor?: string;
+  margin?: string;
 }
 
 function Logo({ fontSize, fontColor, margin }: LogoProps) {
   return (
-    <LogoContainer margin={margin}>
+    <LogoBox margin={margin}>
       <LogoStyle fontSize={fontSize} fontColor={fontColor}>
         롤-허브
       </LogoStyle>
-    </LogoContainer>
+    </LogoBox>
   );
 }
 

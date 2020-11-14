@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+const ContentBox = styled.div`
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -19,6 +19,4 @@ export const Container = styled.div`
   }
 `;
 
-export const Background = styled.div`
-  color: #f6f8fa;
-`;
+export default ContentBox;

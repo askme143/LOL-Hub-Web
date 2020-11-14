@@ -1,17 +1,22 @@
 import styled from 'styled-components';
 
-interface SearchContainerProps {
-  width: string | null;
-  height: string | null;
+interface SearchBoxProps {
+  width: string | undefined;
+  height: string | undefined;
+  changeFont: boolean;
+  border: boolean;
 }
 
-export const SearchContainer = styled.div`
-  width: ${(props: SearchContainerProps) => (props.width ? props.width : '')};
-  height: ${(props: SearchContainerProps) => (props.height ? props.height : '')};
+export const SearchBox = styled.div`
+  width: ${(props: SearchBoxProps) => (props.width ? props.width : '')};
+  height: ${(props: SearchBoxProps) => (props.height ? props.height : '')};
   margin: 0 auto;
   font-family: 'sans-serif';
   color: #ffffff;
   .ant-btn {
-    font-family: 'Wemakeprice-Bold';
+    font-family: ${(props: SearchBoxProps) => (props.changeFont ? 'Wemakeprice-Bold' : '')};
+  }
+  button {
+    border-left: ${(props: SearchBoxProps) => (!props.border ? 'none' : '')};
   }
 `;

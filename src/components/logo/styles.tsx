@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 interface LogoStyleProps {
-  fontSize: string | null;
-  fontColor: string | null;
+  fontSize: string | undefined;
+  fontColor: string | undefined;
 }
 
-interface LogoContainerProps {
-  margin: string | null;
+interface LogoBoxProps {
+  margin: string | undefined;
 }
 
 export const LogoStyle = styled.span`
@@ -16,8 +16,8 @@ export const LogoStyle = styled.span`
   margin: 0 auto;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoBox = styled.div`
   display: flex;
   justify-content: center;
-  margin: ${(props: LogoContainerProps) => (props.margin ? props.margin : '')};
+  margin: ${(props: LogoBoxProps) => (props.margin ? props.margin : '')};
 `;

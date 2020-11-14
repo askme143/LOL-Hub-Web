@@ -29,7 +29,8 @@
         "import/extensions": "off",
         "import/prefer-default-export": "off",
         "class-methods-use-this": "off",
-        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+        "react/require-default-props": "off"
     },
     "settings": {
         "import/resolver": {
