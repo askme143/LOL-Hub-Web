@@ -30,7 +30,8 @@
         "import/prefer-default-export": "off",
         "class-methods-use-this": "off",
         "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-        "react/require-default-props": "off"
+        "react/require-default-props": "off",
+        "no-underscore-dangle": "off"
     },
     "settings": {
         "import/resolver": {

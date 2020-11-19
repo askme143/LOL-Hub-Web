@@ -3,16 +3,20 @@ import * as S from './styles';
 
 interface TierProps {
   queueType: '솔로랭크' | '자유랭크';
+  tier: string;
+  wins: number;
+  losses: number;
+  lp: number;
 }
 
-function Tier({ queueType }: TierProps) {
+function Tier({ queueType, tier, wins, losses, lp }: TierProps) {
   return (
     <S.TierBox>
       <S.TierImage src="/images/ranked-emblems/Emblem_Silver.png" />
       <S.TierText>
         <span>{queueType}</span>
-        <span>Silver 4 / 0 LP</span>
-        <span>27승 14패 / 66%</span>
+        <span>{`${tier} / ${lp} LP`}</span>
+        <span>{`${wins}승 ${losses}패 / ${((wins * 100) / (wins + losses)).toFixed(0)}%`}</span>
       </S.TierText>
     </S.TierBox>
   );

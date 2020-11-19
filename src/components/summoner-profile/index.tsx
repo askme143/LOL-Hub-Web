@@ -3,8 +3,8 @@ import { Button } from 'antd';
 import * as S from './styles';
 
 interface SummonerProfileProps {
-  profileIconID: number;
   name: string;
+  profileIconID: number;
 }
 
 function SummonerProfile({ name, profileIconID }: SummonerProfileProps) {

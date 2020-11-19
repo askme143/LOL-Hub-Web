@@ -25,3 +25,11 @@ export const TierContainer = styled.div`
 
   height: 150px;
 `;
+
+export const ChampionStatSection = styled.section`
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 100%;
+  height: max-content;
+`;
