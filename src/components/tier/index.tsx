@@ -10,9 +10,11 @@ interface TierProps {
 }
 
 function Tier({ queueType, tier, wins, losses, lp }: TierProps) {
+  const src = `/images/ranked-emblems/Emblem_${tier[0] + tier.split(' ')[0].toLowerCase().substr(1)}.png`;
+
   return (
     <S.TierBox>
-      <S.TierImage src="/images/ranked-emblems/Emblem_Silver.png" />
+      <S.TierImage src={src} />
       <S.TierText>
         <span>{queueType}</span>
         <span>{`${tier} / ${lp} LP`}</span>
